@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 5px #aaa;
+            width: 250px;
+            text-align: center;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 8px 0;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Simple Calculator</h3>
+        <form action="Calculator" method="post">
+            <input type="number" name="num1" placeholder="First number" required>
+            <input type="number" name="num2" placeholder="Second number" required>
+            <select name="operation">
+                <option value="add">Add (+)</option>
+                <option value="subtract">Subtract (-)</option>
+                <option value="multiply">Multiply (×)</option>
+                <option value="divide">Divide (÷)</option>
+            </select>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
